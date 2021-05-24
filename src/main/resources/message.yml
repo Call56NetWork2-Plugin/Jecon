@@ -1,7 +1,7 @@
-doNotHavePermission: "&9[Call56Jecon]&cあなたには権限がありません……"
-missingArgument: "&9[Call56Jecon]&cアカウントが見つかりません。"
-invalidArgument: "&9[Call56Jecon]&c金額の指定が変です。"
-playerNotFound: "&9[Call56Jecon]&c未知のエラーです。"
+doNotHavePermission: "&cあなたには権限がありません……"
+missingArgument: "&cアカウントが見つかりません。"
+invalidArgument: "&c金額の指定が変です。"
+playerNotFound: "&c未知のエラーです。"
 
 accountNotFound: "&cAccount not found&r: {name}"
 notEnough: "&cThe balance of the account is not enough."
