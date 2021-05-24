@@ -1,13 +1,13 @@
-# Check new version.
+# 新しいバージョンを確認します。
 versionCheck: true
 
 defaultBalance: 10000.0
 createAccountOnJoin: true
 
-# lazyWrite reduces database writes and improves performance.
-# However, if you have multiple servers sharing the database (eg BungeeCord), players balance may be temporarily inaccurate.
-# The cache-coherency algorithm ensures that the balance will eventually be correct.
-# If you need to keep players balance always accurate, disable this feature.
+#lazyWriteはデータベースの書き込みを減らし、パフォーマンスを向上させます。
+#ただし、データベースを共有する複数のサーバー（BungeeCordなど）がある場合、プレーヤーのバランスが一時的に不正確になる可能性があります。
+#キャッシュコヒーレンシアルゴリズムは、バランスが最終的に正しいことを保証します。
+#プレーヤーのバランスを常に正確に保つ必要がある場合は、この機能を無効にしてください。
 lazyWrite: true
 
 format:
@@ -16,11 +16,11 @@ format:
   singularMinor: "cent"
   pluralMinor: "cents"
   format: "{major} {majorcurrency} {minor} {minorcurrency}"
-  # Optional
-  #formatZeroMinor: "{major} {majorcurrency}"
-  # Example:
-  #format: "$ {major}.{minor}"
-  #format: "{major}円"
+  #オプション
+  #formatZeroMinor： "{major} {majorcurrency}"
+  #例：
+  #format： "$ {メジャー}。{マイナー}"
+  #format： "{major}円"
 
 database:
   # Database type. (sqlite/mysql)
@@ -32,16 +32,16 @@ database:
     name: "jecon"
     username: "root"
     password: "your_mysql_password"
-    # It is recommended to stop caching when using MySQL
-    # If you have caches in your application, database cache is "wasted memory".
+    #MySQLを使用する場合は、キャッシュを停止することをお勧めします
+    #アプリケーションにキャッシュがある場合、データベースキャッシュは「無駄なメモリ」です。
     init: "SET SESSION query_cache_type=0"
     properties:
       "useSSL": "false"
-      # encoding
-      #"useUnicode": "true"
-      #"characterEncoding": "UTF-8"
-      #"characterSetResults": "UTF-8"
-      # performance
+      # エンコーディング
+      # "useUnicode"： "true"
+      # "characterEncoding"： "UTF-8"
+      # "characterSetResults"： "UTF-8"
+      # パフォーマンス
       "maintainTimeStats": "false"
       "elideSetAutoCommits": "true"
       "useLocalSessionState": "true"
@@ -50,14 +50,14 @@ database:
       "cachePrepStmts": "true"
       "prepStmtCacheSize": "250"
       "prepStmtCacheSqlLimit": "2048"
-      #"useServerPrepStmts": "true"
+      # "useServerPrepStmts"： "true"
   connectionPool:
-    # -1 is default
+    #-1がデフォルトです
     maximumPoolSize: -1
     minimumIdle: -1
     maxLifetime: -1
     connectionTimeout: -1
     idleTimeout: -1
 
-# Don't touch
+# 触れないでください
 version: 3
