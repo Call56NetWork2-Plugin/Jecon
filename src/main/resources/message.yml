@@ -1,7 +1,7 @@
-doNotHavePermission: "&cYou don't have permission!!"
-missingArgument: "&cArgument is missing."
-invalidArgument: "&cInvalid argument&r: {value}"
-playerNotFound: "&cPlayer not found&r: {name}"
+doNotHavePermission: "&9[Call56Jecon]&cあなたには権限がありません……"
+missingArgument: "&9[Call56Jecon]&cアカウントが見つかりません。"
+invalidArgument: "&9[Call56Jecon]&c金額の指定が変です。"
+playerNotFound: "&9[Call56Jecon]&c未知のエラーです。"
 
 accountNotFound: "&cAccount not found&r: {name}"
 notEnough: "&cThe balance of the account is not enough."
@@ -17,7 +17,7 @@ createAlready: "&cAccount already exists: {name}"
 remove: "&aHas been deleted account of {name} (Balance: {balance})"
 reloaded: "Config has been reloaded."
 
-topFirst: "&a======&r Billionaires ranking (Page: {page}) &a======"
+topFirst: "&a======&r 所有資産ランキング(Page: {page}) &a======"
 topEntry: "{rank}: {name} ({balance})"
 
 newVersion:
